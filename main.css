@@ -3,6 +3,12 @@
   src: url("fonts/truenobd.otf");
 }
 
+@media only screen and (max-width: 1026px) {
+  ._fadeShow {
+    display: none;
+  }
+}
+
 body, html {
   height: 100%;
 }
@@ -10,10 +16,6 @@ body, html {
 body {
   margin: 0;
   height: 100%;
-}
-
-body ._stickNavBar {
-  position: relative;
 }
 
 body #bg {
@@ -33,18 +35,18 @@ body #bg ._color-overlay {
 }
 
 body #bg ._top {
+  position: relative;
   margin-top: 10px;
-  margin-right: 0px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 body #bg #avatar {
   position: relative;
-  margin-top: 50px;
+  margin-top: 90px;
   border-radius: 50%;
   width: 150px;
-  -webkit-box-shadow: 0 4px 8px 0 black;
-          box-shadow: 0 4px 8px 0 black;
+  -webkit-box-shadow: 0 4px 8px 0 #000;
+          box-shadow: 0 4px 8px 0 #000;
 }
 
 body #bg ._mySelf {
@@ -61,8 +63,12 @@ body #bg ._hireCvBtn {
   margin-right: 5px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 13px;
-  -webkit-box-shadow: 0 2px 6px 0 black;
-          box-shadow: 0 2px 6px 0 black;
+  -webkit-box-shadow: 0 2px 6px 0 #000;
+          box-shadow: 0 2px 6px 0 #000;
+}
+
+body ._posIcons {
+  margin-left: -53.5px;
 }
 
 body ._icons {
@@ -72,14 +78,14 @@ body ._icons {
   display: inline-block;
   font-size: 20px;
   padding: 20px 27px;
-  background-color: gray;
+  background-color: grey;
   color: white;
-  border: 1px solid gray;
+  border: 1px solid grey;
   border-radius: 50%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  -webkit-box-shadow: 0 4px 6px 0 black;
-          box-shadow: 0 4px 6px 0 black;
+  -webkit-box-shadow: 0 4px 6px 0 #000;
+          box-shadow: 0 4px 6px 0 #000;
 }
 
 body ._icons:hover {
@@ -87,37 +93,49 @@ body ._icons:hover {
   color: #4caf50;
 }
 
+body #info ._educationCards {
+  margin-top: 50px;
+  -webkit-box-shadow: 0 4px 10px 0 grey;
+          box-shadow: 0 4px 10px 0 grey;
+  margin-bottom: 20px;
+}
+
 body #info ._shadowToCard {
   margin-top: 50px;
-  -webkit-box-shadow: 0 4px 10px 0 black;
-          box-shadow: 0 4px 10px 0 black;
+  -webkit-box-shadow: 0 4px 10px 0 grey;
+          box-shadow: 0 4px 10px 0 grey;
   border-radius: 20px;
   margin-bottom: 20px;
 }
 
 body #info ._titleCard {
-  text-shadow: 0.5px 0.5px black;
+  text-shadow: 0.5px 0.5px grey;
   margin: 20px 20px;
   font-family: treuno;
   color: #4caf50;
 }
 
 body #info ._contentCard {
+  text-align: justify;
   margin: 10px 20px;
   color: grey;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 body #info ._basicInfo {
   list-style: none;
-  margin-left: 0px;
+  margin-top: 7px;
+  margin-left: 22px;
   margin-bottom: 20px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 body #info ._infoContent {
   list-style: none;
-  margin-left: 20px;
-  text-align: justify;
+  font-size: 17px;
+  margin-bottom: 21px;
+  color: grey;
+  margin-left: -130px;
 }
 
 body #info ._cardHeading {
@@ -128,12 +146,11 @@ body #info ._cardHeading {
 body #info ._leftCardPanel {
   background-color: #4caf50;
   padding: 20% 20%;
-  border-radius: 20px;
   font-size: 20px;
 }
 
 body ._footer {
-  background-color: #eeeeee;
+  background-color: white;
   width: 100%;
   height: 200px;
   margin-top: 60px;

@@ -36,22 +36,18 @@
 
 
         <!------NAV-BAR-------->
-        <header class="_stickNavBar">
-            <div class="container">
-                <ul class="nav ">
-                    <li class="navbar-brand _top">
-                        <a class="nav-link active text-white" href="#">MY PROFILE<a>
-                    </li>
-                    <li class="nav-item ml-auto _top">
-                        <a class="nav-link text-white" href="#">ABOUT</a>
-                    </li>
-                    <li class="nav-item _top">
-                        <a class="nav-link text-white" href="#">SKILLS</a>
-                    </li>
-                    <li class="nav-item _top">
-                        <a class="nav-link text-white" href="#">CONTACT</a>
-                    </li>
-                </ul>
+        <header>
+            <div class=" fixed-top">
+                <div class="d-none d-sm-block">
+                    <nav class="nav fixed-top " id="navBar">
+                        <a class="nav-link _top text-white" href="#">MY PROFILE</a>
+
+                        <a class="nav-link _top ml-auto text-white " href="#">ABOUT</a>
+                        <a class="nav-link _top text-white" href="#">SKILLS</a>
+                        <a class="nav-link _top text-white d-none d-sm-block" href="#">CONTACT</a>
+
+                    </nav>
+                </div>
             </div>
         </header>
 
@@ -78,156 +74,183 @@
 
     </div>
     <!--------- ICONS-------->
-    <div>
+    <div class="_posIcons">
         <ul class="text-center" style="margin-top: -44px;">
-            <li class="_icons"><i class="fab fa-instagram"></i></li>
-            <li class="_icons"><i class="fab fa-twitter-square"></i></li>
-            <li class="_icons"><i class="fab fa-github-square"></i></li>
-            <li class="_icons"><i class="fab fa-facebook-square"></i></li>
+            <li class="_icons"><i class="fab fa-instagram _insta"></i></li>
+            <li class="_icons"><i class="fab fa-twitter-square _tweet"></i></li>
+            <li class="_icons"><i class="fab fa-github-square _git"></i></li>
+            <li class="_icons"><i class="fab fa-facebook-square _fb"></i></li>
         </ul>
     </div>
 
     <!------REST OF THE PAGE--------->
-    <div id="info" class="container">
 
+    <div id="info" class="container ">
 
-        <!-- ABOUT ME  -->
-        <div class="card _shadowToCard">
-            <div class="row">
-                <!-----ABOUT-->
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                    <h4 class="card-title _titleCard">About</h4>
-                    <div data-aos="fade-right">
-                        <p class="card-text _contentCard">Hello! I am Vineeth Pai. Web Developer, Android Developer and
-                            a PC Gamer. <br><br>My career objective is to be a part of an oraganization which provides oppotunities to learn and to provide the best service to that oraganization , also to add value to my career.</p>
+        <div data-aos="fade-up">
+            <!-- ABOUT ME  -->
+            <div class="card _shadowToCard justify-content-center ">
+                <div class="row">
+                    <!-----ABOUT-->
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <h4 class="card-title _titleCard">About</h4>
+                        <div data-aos="fade-right">
+                            <p class="card-text _contentCard">Hello! I am Vineeth Pai. Web Developer, Android Developer
+                                and
+                                a PC Gamer. <br><br>My career objective is to be a part of an oraganization which
+                                provides
+                                oppotunities to learn and to provide the best service to that oraganization , also to
+                                add
+                                value to my career.</p>
+                        </div>
                     </div>
-                </div>
-                <!-----BASIC INFOMATION-->
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                    <h4 class="card-title _titleCard">Basic Information</h4>
-                    <div data-aos="fade-left">
-                        <p class="card-text _contentCard">
-                            <ul>
-                                <li class="_basicInfo"><b>AGE:</b><span class="_infoContent">20</span></li>
-                                <li class="_basicInfo"><b>EMAIL:</b><span
-                                        class="_infoContent">vinipai45@gmail.com</span></li>
-                                <li class="_basicInfo"><b>PHONE:</b><span class="_infoContent">+918951875150</span></li>
-                                <li class="_basicInfo"><b>ADDRESS:</b><span class="_infoContent">1-54/2 LAXMINIVAS, Opp
-                                        HondaMatrixShowRoom, Karkala</span></li>
-                                <li class="_basicInfo"><b>LANGUAGE:</b><span class="_infoContent">English, Hindi,
-                                        Kannada, Konkani</span></li>
+                    <!-----BASIC INFOMATION-->
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <h4 class="card-title _titleCard">Basic Information</h4>
+                        <div data-aos="fade-left">
+                            <p class="card-text _contentCard">
+                                <ul>
+                                    <li class="_basicInfo"><b>AGE:</b><span class="_infoContent" style="margin-left: 82px;" >20</span></li>
+                                    <li class="_basicInfo"><b>EMAIL:</b><span class="_infoContent" style="margin-left: 65px;">vinipai45@gmail.com</span></li>
+                                    <li class="_basicInfo"><b>PHONE:</b><span class="_infoContent" style="margin-left: 56px;">+918951875150</span>
+                                    </li>
+                                    <li class="_basicInfo"><b>ADDRESS:</b><span class="_infoContent" style="margin-left: 40px;">1-54/2, LAXMINIVAS, Hanchikatte, Karkala</span></li>
+                                    <li class="_basicInfo"><b>LANGUAGE:</b><span class="_infoContent" style="margin-left: 28px;">English, Hindi, Kannada, Konkani</span></li>
 
-                            </ul>
-                        </p>
+                                </ul>
+                                <!-- <div class="row">
+                                        HEADING
+                                    <div class="col-sm-12 col-md-6 col-lg-6">
+                                        <li class="_basicInfo"><b>AGE:</b></li>
+                                        <li class="_basicInfo"><b>EMAIL:</b></li>
+                                        <li class="_basicInfo"><b>PHONE:</b>
+                                        </li>
+                                        <li class="_basicInfo"><b>ADDRESS:</b></li>
+                                        <li class="_basicInfo"><b>LANGUAGE:</b></li>
+                                    </div>
+                                        VALUE
+                                    <div class="col-sm-12 col-md-6 col-lg-6">
+                                        <li class="_infoContent">20</li>
+                                        <li class="_infoContent">vinipai45@gmail.com</li>
+                                        <li class="_infoContent">+918951875150</li>
+                                        <li class="_infoContent">1-54/2, LAXMINIVAS, Hanchikatte, Karkala</li>
+                                        <li class="_infoContent">English, Hindi, Kannada, Konkani</b></li>
+                                    </div>
+                                </div> -->
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <!-- PROFESSIONAL SKILLS  -->
 
 
         <h4 class="text-center _cardHeading">PROFFESSIONAL SKILLS</h4>
-        <div class="card _shadowToCard">
-            <div class="row">
+        <div data-aos="fade-up">
+            <div class="card _shadowToCard">
+                <div class="row">
 
-                <!-- WEB  -->
-                <div class="col-sm-12 col-md-6 col-lg-6 _topColor">
-                    <h4 class="card-title _titleCard">WEB</h4>
-                    <div data-aos="fade-right">
-                        <p class="card-text _contentCard">
-                            <ul>
-                                <li class="_basicInfo"><b>HTML</b></li>
-                                <li class="_basicInfo"><b>CSS</b> </li>
-                                <li class="_basicInfo"><b>SASS</b> </li>
-                                <li class="_basicInfo"><b>JAVASCRIPT</b> </li>
-                                <li class="_basicInfo"><b>BOOTSTRAP</b> </li>
+                    <!-- WEB  -->
+                    <div class="col-sm-12 col-md-6 col-lg-6 _topColor">
+                        <h4 class="card-title _titleCard">WEB</h4>
+                        <div data-aos="fade-right">
+                            <p class="card-text _contentCard">
+                                <ul>
+                                    <li class="_basicInfo"><b>HTML</b></li>
+                                    <li class="_basicInfo"><b>CSS</b> </li>
+                                    <li class="_basicInfo"><b>SASS</b> </li>
+                                    <li class="_basicInfo"><b>JAVASCRIPT</b> </li>
+                                    <li class="_basicInfo"><b>BOOTSTRAP</b> </li>
 
-                            </ul>
-                        </p>
+                                </ul>
+                            </p>
+                        </div>
                     </div>
-                </div>
 
-                <!-- PROGRAMMING -->
-                <div class="col-sm-12 col-md-6 col-lg-6 _topColor">
-                    <h4 class="card-title _titleCard">PROGRAMMING</h4>
-                    <div data-aos="fade-left">
-                        <p class="card-text _contentCard">
-                            <ul>
-                                <li class="_basicInfo"><b>C</b></li>
-                                <li class="_basicInfo"><b>C++</b> </li>
-                                <li class="_basicInfo"><b>JAVA</b> </li>
-                                <li class="_basicInfo"><b>KOTLIN</b> </li>
-                            </ul>
-                        </p>
+                    <!-- PROGRAMMING -->
+                    <div class="col-sm-12 col-md-6 col-lg-6 _topColor">
+                        <h4 class="card-title _titleCard">PROGRAMMING</h4>
+                        <div data-aos="fade-left">
+                            <p class="card-text _contentCard">
+                                <ul>
+                                    <li class="_basicInfo"><b>C</b></li>
+                                    <li class="_basicInfo"><b>C++</b> </li>
+                                    <li class="_basicInfo"><b>JAVA</b> </li>
+                                    <li class="_basicInfo"><b>KOTLIN</b> </li>
+                                </ul>
+                            </p>
+                        </div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
-
         <!-- EDUCATION  -->
         <h4 class="text-center _cardHeading">EDUCATION</h4>
-
-        <!-- JAYCEES  -->
-        <div class="card mb-2 _shadowToCard">
-            <div class="row ">
-                <div class="col-md-4 ">
-                    <div data-aos="fade-right">
-                        <div class="_leftCardPanel">
-                            <p class="text-center text-white font-weight-bold">Year of Passing <br>2015</p>
+        <div data-aos="fade-up">
+            <!-- JAYCEES  -->
+            <div class="card mb-2 _educationCards">
+                <div class="row ">
+                    <div class="col-md-4 ">
+                        <div data-aos="fade-right">
+                            <div class="_leftCardPanel">
+                                <p class="text-center text-white font-weight-bold">Year of Passing <br>2015</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <div data-aos="fade-left">
-                            <h5 class="card-title _titleCard">JAYCEES ENGLISH MEDIUM SCHOOL</h5>
-                            <p class="card-text _contentCard">Karnataka Secondary Board <br>Secured 91%</p>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <div data-aos="fade-left">
+                                <h5 class="card-title _titleCard">JAYCEES ENGLISH MEDIUM SCHOOL</h5>
+                                <p class="card-text _contentCard">Karnataka Secondary Board <br>Secured 91%</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <!-- JNANASUDHA  -->
-
-        <div class="card mb-2 _shadowToCard">
-            <div class="row ">
-                <div class="col-md-4 ">
-                    <div data-aos="fade-right">
-                        <div class="_leftCardPanel">
-                            <p class="text-center text-white font-weight-bold">Year of Passing <br>2017</p>
+        <div data-aos="fade-up">
+            <div class="card mb-2 _educationCards">
+                <div class="row ">
+                    <div class="col-md-4 ">
+                        <div data-aos="fade-right">
+                            <div class="_leftCardPanel">
+                                <p class="text-center text-white font-weight-bold">Year of Passing <br>2017</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <div data-aos="fade-left">
-                            <h5 class="card-title _titleCard">KARKALA JNANASUDHA PU COLLEGE</h5>
-                            <p class="card-text _contentCard">Karnataka PU Board <br>Secured 93.33%</p>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <div data-aos="fade-left">
+                                <h5 class="card-title _titleCard">KARKALA JNANASUDHA PU COLLEGE</h5>
+                                <p class="card-text _contentCard">Karnataka PU Board <br>Secured 93.33%</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <!-- MITE  -->
-        <div class="card mb-2 _shadowToCard">
-            <div class="row ">
-                <div class="col-md-4 ">
-                    <div data-aos="fade-right">
-                        <div class="_leftCardPanel">
-                            <p class="text-center text-white ">Year of Passing <br>(Persuing)</p>
+        <div data-aos="fade-up">
+            <div class="card mb-2 _educationCards">
+                <div class="row ">
+                    <div class="col-md-4 ">
+                        <div data-aos="fade-right">
+                            <div class="_leftCardPanel">
+                                <p class="text-center text-white ">Year of Passing <br>(Persuing)</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <div data-aos="fade-left">
-                            <h5 class="card-title _titleCard">MANGALORE INSTITUTE OF TECHNOLOGY AND ENGINEERING</h5>
-                            <p class="card-text _contentCard">Visvesvaraya Technological University, Belgaum<br>CGPA:
-                                8.42GPA</p>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <div data-aos="fade-left">
+                                <h5 class="card-title _titleCard">MANGALORE INSTITUTE OF TECHNOLOGY AND ENGINEERING</h5>
+                                <p class="card-text _contentCard">Visvesvaraya Technological University,
+                                    Belgaum<br>CGPA:
+                                    8.42GPA</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -235,13 +258,15 @@
         </div>
     </div>
 
+    <!------FOOTER SECTION-->
+
     <footer>
         <div class="_footer">
             <div class="container text-center ">
-                <i class="fab fa-instagram fa-3x _bottomIcons"></i>
-                <i class="fab fa-twitter-square fa-3x _bottomIcons"></i>
-                <i class="fab fa-github-square fa-3x _bottomIcons"></i>
-                <i class="fab fa-facebook-square fa-3x _bottomIcons"></i>
+                <i class="fab fa-instagram fa-3x _bottomIcons _insta"></i>
+                <i class="fab fa-twitter-square fa-3x _bottomIcons _tweet"></i>
+                <i class="fab fa-github-square fa-3x _bottomIcons _git"></i>
+                <i class="fab fa-facebook-square fa-3x _bottomIcons _fb"></i>
             </div>
             <h3 class="text-center font-weight-bold " style="margin-top:10px;">Vineeth Pai</h3>\
             <p class="_copyright text-center"><sup>&#9400</sup>Copyright CV. All rights reserved<p>
@@ -273,6 +298,10 @@
     <!-- AOS JS  -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
+
+    <!-- CUSTOM JAVASCRIPT -->
+    <script src="app.js"></script>
+
 </body>
 
 </html>
